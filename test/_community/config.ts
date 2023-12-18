@@ -1,5 +1,6 @@
 import { buildConfigWithDefaults } from '../buildConfigWithDefaults'
 import { devUser } from '../credentials'
+import { ConversationTexts, Conversations } from './collections/Conversations'
 import { MediaCollection } from './collections/Media'
 import { PostsCollection, postsSlug } from './collections/Posts'
 import { MenuGlobal } from './globals/Menu'
@@ -9,6 +10,8 @@ export default buildConfigWithDefaults({
   collections: [
     PostsCollection,
     MediaCollection,
+    Conversations,
+    ConversationTexts,
     // ...add more collections here
   ],
   globals: [
